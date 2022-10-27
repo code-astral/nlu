@@ -1,0 +1,1936 @@
+{
+  "_version": "1.2",
+  "project": {
+    "_id": "6346f5389986fb0007e646e4",
+    "name": "Chat Assistant",
+    "teamID": "D8na6G8mEo",
+    "devVersion": "6346f5382970bd74aeb06a2c",
+    "platform": "chatbot",
+    "platformData": {
+      "invocationName": "template project general"
+    },
+    "members": [],
+    "linkType": "STRAIGHT",
+    "image": "",
+    "customThemes": [],
+    "_version": 1.2,
+    "creatorID": 102250,
+    "prototype": {
+      "nlp": {
+        "type": "LUIS",
+        "appID": "b83f8290-3550-4336-93d9-cb00040f1bb8",
+        "resourceID": "kkcmpebg:https://us-0.cognitiveservices.azure.com/"
+      },
+      "data": {},
+      "lastTrainedTime": 1666836301285,
+      "trainedModel": {
+        "intents": [
+          {
+            "key": "VF.START_OVER",
+            "name": "VF.START_OVER",
+            "inputs": [
+              {
+                "text": "start over"
+              },
+              {
+                "text": "restart"
+              }
+            ],
+            "slots": []
+          },
+          {
+            "key": "capture_Km_dgfiedcm",
+            "name": "capture_Km_dgfiedcm",
+            "inputs": [],
+            "slots": [
+              {
+                "id": "1w1il3a5h",
+                "required": true,
+                "dialog": {
+                  "prompt": [],
+                  "confirm": [],
+                  "utterances": [
+                    {
+                      "text": "{{[Km].1w1il3a5h}}",
+                      "slots": [
+                        "1w1il3a5h"
+                      ]
+                    },
+                    {
+                      "text": "I drive {{[Km].1w1il3a5h}}",
+                      "slots": [
+                        "1w1il3a5h"
+                      ]
+                    },
+                    {
+                      "text": "I drive {{[Km].1w1il3a5h}} kilometers",
+                      "slots": [
+                        "1w1il3a5h"
+                      ]
+                    },
+                    {
+                      "text": "{{[Km].1w1il3a5h}} kilometers",
+                      "slots": [
+                        "1w1il3a5h"
+                      ]
+                    },
+                    {
+                      "text": "{{[Km].1w1il3a5h}}",
+                      "slots": [
+                        "1w1il3a5h"
+                      ]
+                    }
+                  ],
+                  "confirmEnabled": false
+                }
+              }
+            ]
+          },
+          {
+            "key": "capture_Name_npifkaln",
+            "name": "capture_Name_npifkaln",
+            "inputs": [],
+            "slots": [
+              {
+                "id": "ijp636ku",
+                "required": true,
+                "dialog": {
+                  "prompt": [],
+                  "confirm": [],
+                  "utterances": [
+                    {
+                      "text": "{{[Name].ijp636ku}}",
+                      "slots": [
+                        "ijp636ku"
+                      ]
+                    },
+                    {
+                      "text": "My name is {{[Name].ijp636ku}}",
+                      "slots": [
+                        "ijp636ku"
+                      ]
+                    },
+                    {
+                      "text": "It's {{[Name].ijp636ku}}",
+                      "slots": [
+                        "ijp636ku"
+                      ]
+                    },
+                    {
+                      "text": "{{[Name].ijp636ku}}",
+                      "slots": [
+                        "ijp636ku"
+                      ]
+                    }
+                  ],
+                  "confirmEnabled": false
+                }
+              }
+            ]
+          },
+          {
+            "key": "capture_Automatic_renewal_jhmafekp",
+            "name": "capture_Automatic_renewal_jhmafekp",
+            "inputs": [],
+            "slots": [
+              {
+                "id": "ih2yf3ac9",
+                "required": true,
+                "dialog": {
+                  "prompt": [],
+                  "confirm": [],
+                  "utterances": [
+                    {
+                      "text": "What is {{[Automatic_renewal].ih2yf3ac9}} ?",
+                      "slots": [
+                        "ih2yf3ac9"
+                      ]
+                    },
+                    {
+                      "text": "{{[Automatic_renewal].ih2yf3ac9}}",
+                      "slots": [
+                        "ih2yf3ac9"
+                      ]
+                    },
+                    {
+                      "text": "What discount does {{[Automatic_renewal].ih2yf3ac9}}  give me?",
+                      "slots": [
+                        "ih2yf3ac9"
+                      ]
+                    },
+                    {
+                      "text": "{{[Automatic_renewal].ih2yf3ac9}}",
+                      "slots": [
+                        "ih2yf3ac9"
+                      ]
+                    }
+                  ],
+                  "confirmEnabled": false
+                }
+              }
+            ]
+          }
+        ],
+        "slots": [
+          {
+            "key": "ijp636ku",
+            "name": "Name",
+            "type": {
+              "value": "VF.NAME"
+            },
+            "color": "#56b365",
+            "inputs": [
+              "Dhwani",
+              "Asif",
+              "Byron",
+              "Avidan",
+              "Anik",
+              "Aneeq"
+            ]
+          },
+          {
+            "key": "1w1il3a5h",
+            "name": "Km",
+            "type": {
+              "value": "VF.NUMBER"
+            },
+            "color": "#616769",
+            "inputs": []
+          },
+          {
+            "key": "ih2yf3ac9",
+            "name": "Automatic_renewal",
+            "type": {
+              "value": "Custom"
+            },
+            "color": "#616769",
+            "inputs": [
+              "ACCR",
+              "Automatic renewal"
+            ]
+          }
+        ]
+      }
+    },
+    "createdAt": "2022-10-12T17:11:20.000Z"
+  },
+  "version": {
+    "_id": "6346f5382970bd74aeb06a2c",
+    "variables": [
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "locale"
+    ],
+    "platformData": {
+      "slots": [
+        {
+          "key": "ijp636ku",
+          "name": "Name",
+          "type": {
+            "value": "VF.NAME"
+          },
+          "color": "#56b365",
+          "inputs": [
+            "Dhwani",
+            "Asif",
+            "Byron",
+            "Avidan",
+            "Anik",
+            "Aneeq"
+          ]
+        },
+        {
+          "key": "1w1il3a5h",
+          "name": "Km",
+          "type": {
+            "value": "VF.NUMBER"
+          },
+          "color": "#616769",
+          "inputs": []
+        },
+        {
+          "key": "ih2yf3ac9",
+          "name": "Automatic_renewal",
+          "type": {
+            "value": "Custom"
+          },
+          "color": "#616769",
+          "inputs": [
+            "ACCR",
+            "Automatic renewal"
+          ]
+        }
+      ],
+      "intents": [
+        {
+          "key": "VF.START_OVER",
+          "name": "VF.START_OVER",
+          "inputs": [],
+          "slots": []
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "en-US"
+        ],
+        "defaultVoice": "Alexa"
+      },
+      "publishing": {},
+      "platform": "general"
+    },
+    "name": "Initial Version",
+    "projectID": "6346f5389986fb0007e646e4",
+    "manualSave": false,
+    "autoSaveFromRestore": false,
+    "topics": [
+      {
+        "sourceID": "6346f5382970bd74aeb06a2d",
+        "type": "DIAGRAM"
+      }
+    ],
+    "components": [],
+    "rootDiagramID": "6346f5382970bd74aeb06a2d",
+    "creatorID": 102250,
+    "_version": 3.91,
+    "domains": [
+      {
+        "id": "cl95w2gsn054k08l5gwcr30fp",
+        "name": "Home",
+        "live": true,
+        "topicIDs": [
+          "6346f5382970bd74aeb06a2d",
+          "6359e526a71c310007671c02"
+        ],
+        "rootDiagramID": "6346f5382970bd74aeb06a2d"
+      }
+    ],
+    "templateDiagramID": "6346f538e1f55982e4a517e4",
+    "prototype": {
+      "data": {
+        "name": "Chat Assistant",
+        "locales": [
+          "en-US"
+        ]
+      },
+      "model": {
+        "intents": [
+          {
+            "key": "VF.START_OVER",
+            "name": "VF.START_OVER",
+            "inputs": [
+              {
+                "text": "start over"
+              },
+              {
+                "text": "restart"
+              }
+            ],
+            "slots": []
+          },
+          {
+            "key": "capture_Km_dgfiedcm",
+            "name": "capture_Km_dgfiedcm",
+            "inputs": [],
+            "slots": [
+              {
+                "id": "1w1il3a5h",
+                "required": true,
+                "dialog": {
+                  "prompt": [],
+                  "confirm": [],
+                  "utterances": [
+                    {
+                      "text": "{{[Km].1w1il3a5h}}",
+                      "slots": [
+                        "1w1il3a5h"
+                      ]
+                    },
+                    {
+                      "text": "I drive {{[Km].1w1il3a5h}}",
+                      "slots": [
+                        "1w1il3a5h"
+                      ]
+                    },
+                    {
+                      "text": "I drive {{[Km].1w1il3a5h}} kilometers",
+                      "slots": [
+                        "1w1il3a5h"
+                      ]
+                    },
+                    {
+                      "text": "{{[Km].1w1il3a5h}} kilometers",
+                      "slots": [
+                        "1w1il3a5h"
+                      ]
+                    },
+                    {
+                      "text": "{{[Km].1w1il3a5h}}",
+                      "slots": [
+                        "1w1il3a5h"
+                      ]
+                    }
+                  ],
+                  "confirmEnabled": false
+                }
+              }
+            ]
+          },
+          {
+            "key": "capture_Name_npifkaln",
+            "name": "capture_Name_npifkaln",
+            "inputs": [],
+            "slots": [
+              {
+                "id": "ijp636ku",
+                "required": true,
+                "dialog": {
+                  "prompt": [],
+                  "confirm": [],
+                  "utterances": [
+                    {
+                      "text": "{{[Name].ijp636ku}}",
+                      "slots": [
+                        "ijp636ku"
+                      ]
+                    },
+                    {
+                      "text": "My name is {{[Name].ijp636ku}}",
+                      "slots": [
+                        "ijp636ku"
+                      ]
+                    },
+                    {
+                      "text": "It's {{[Name].ijp636ku}}",
+                      "slots": [
+                        "ijp636ku"
+                      ]
+                    },
+                    {
+                      "text": "{{[Name].ijp636ku}}",
+                      "slots": [
+                        "ijp636ku"
+                      ]
+                    }
+                  ],
+                  "confirmEnabled": false
+                }
+              }
+            ]
+          },
+          {
+            "key": "capture_Automatic_renewal_jhmafekp",
+            "name": "capture_Automatic_renewal_jhmafekp",
+            "inputs": [],
+            "slots": [
+              {
+                "id": "ih2yf3ac9",
+                "required": true,
+                "dialog": {
+                  "prompt": [],
+                  "confirm": [],
+                  "utterances": [
+                    {
+                      "text": "What is {{[Automatic_renewal].ih2yf3ac9}} ?",
+                      "slots": [
+                        "ih2yf3ac9"
+                      ]
+                    },
+                    {
+                      "text": "{{[Automatic_renewal].ih2yf3ac9}}",
+                      "slots": [
+                        "ih2yf3ac9"
+                      ]
+                    },
+                    {
+                      "text": "What discount does {{[Automatic_renewal].ih2yf3ac9}}  give me?",
+                      "slots": [
+                        "ih2yf3ac9"
+                      ]
+                    },
+                    {
+                      "text": "{{[Automatic_renewal].ih2yf3ac9}}",
+                      "slots": [
+                        "ih2yf3ac9"
+                      ]
+                    }
+                  ],
+                  "confirmEnabled": false
+                }
+              }
+            ]
+          }
+        ],
+        "slots": [
+          {
+            "key": "ijp636ku",
+            "name": "Name",
+            "type": {
+              "value": "VF.NAME"
+            },
+            "color": "#56b365",
+            "inputs": [
+              "Dhwani",
+              "Asif",
+              "Byron",
+              "Avidan",
+              "Anik",
+              "Aneeq"
+            ]
+          },
+          {
+            "key": "1w1il3a5h",
+            "name": "Km",
+            "type": {
+              "value": "VF.NUMBER"
+            },
+            "color": "#616769",
+            "inputs": []
+          },
+          {
+            "key": "ih2yf3ac9",
+            "name": "Automatic_renewal",
+            "type": {
+              "value": "Custom"
+            },
+            "color": "#616769",
+            "inputs": [
+              "ACCR",
+              "Automatic renewal"
+            ]
+          }
+        ]
+      },
+      "context": {
+        "stack": [
+          {
+            "programID": "6346f5382970bd74aeb06a2d",
+            "storage": {},
+            "variables": {}
+          }
+        ],
+        "variables": {}
+      },
+      "surveyorContext": {
+        "slotsMap": {
+          "ijp636ku": {
+            "key": "ijp636ku",
+            "name": "Name",
+            "type": {
+              "value": "VF.NAME"
+            },
+            "color": "#56b365",
+            "inputs": [
+              "Dhwani",
+              "Asif",
+              "Byron",
+              "Avidan",
+              "Anik",
+              "Aneeq"
+            ]
+          },
+          "1w1il3a5h": {
+            "key": "1w1il3a5h",
+            "name": "Km",
+            "type": {
+              "value": "VF.NUMBER"
+            },
+            "color": "#616769",
+            "inputs": []
+          },
+          "ih2yf3ac9": {
+            "key": "ih2yf3ac9",
+            "name": "Automatic_renewal",
+            "type": {
+              "value": "Custom"
+            },
+            "color": "#616769",
+            "inputs": [
+              "ACCR",
+              "Automatic renewal"
+            ]
+          }
+        },
+        "extraSlots": [],
+        "extraIntents": [
+          {
+            "key": "capture_Km_dgfiedcm",
+            "name": "capture_Km_dgfiedcm",
+            "inputs": [],
+            "slots": [
+              {
+                "id": "1w1il3a5h",
+                "required": true,
+                "dialog": {
+                  "prompt": [],
+                  "confirm": [],
+                  "utterances": [
+                    {
+                      "text": "{{[Km].1w1il3a5h}}",
+                      "slots": [
+                        "1w1il3a5h"
+                      ]
+                    },
+                    {
+                      "text": "I drive {{[Km].1w1il3a5h}}",
+                      "slots": [
+                        "1w1il3a5h"
+                      ]
+                    },
+                    {
+                      "text": "I drive {{[Km].1w1il3a5h}} kilometers",
+                      "slots": [
+                        "1w1il3a5h"
+                      ]
+                    },
+                    {
+                      "text": "{{[Km].1w1il3a5h}} kilometers",
+                      "slots": [
+                        "1w1il3a5h"
+                      ]
+                    },
+                    {
+                      "text": "{{[Km].1w1il3a5h}}",
+                      "slots": [
+                        "1w1il3a5h"
+                      ]
+                    }
+                  ],
+                  "confirmEnabled": false
+                }
+              }
+            ]
+          },
+          {
+            "key": "capture_Name_npifkaln",
+            "name": "capture_Name_npifkaln",
+            "inputs": [],
+            "slots": [
+              {
+                "id": "ijp636ku",
+                "required": true,
+                "dialog": {
+                  "prompt": [],
+                  "confirm": [],
+                  "utterances": [
+                    {
+                      "text": "{{[Name].ijp636ku}}",
+                      "slots": [
+                        "ijp636ku"
+                      ]
+                    },
+                    {
+                      "text": "My name is {{[Name].ijp636ku}}",
+                      "slots": [
+                        "ijp636ku"
+                      ]
+                    },
+                    {
+                      "text": "It's {{[Name].ijp636ku}}",
+                      "slots": [
+                        "ijp636ku"
+                      ]
+                    },
+                    {
+                      "text": "{{[Name].ijp636ku}}",
+                      "slots": [
+                        "ijp636ku"
+                      ]
+                    }
+                  ],
+                  "confirmEnabled": false
+                }
+              }
+            ]
+          },
+          {
+            "key": "capture_Automatic_renewal_jhmafekp",
+            "name": "capture_Automatic_renewal_jhmafekp",
+            "inputs": [],
+            "slots": [
+              {
+                "id": "ih2yf3ac9",
+                "required": true,
+                "dialog": {
+                  "prompt": [],
+                  "confirm": [],
+                  "utterances": [
+                    {
+                      "text": "What is {{[Automatic_renewal].ih2yf3ac9}} ?",
+                      "slots": [
+                        "ih2yf3ac9"
+                      ]
+                    },
+                    {
+                      "text": "{{[Automatic_renewal].ih2yf3ac9}}",
+                      "slots": [
+                        "ih2yf3ac9"
+                      ]
+                    },
+                    {
+                      "text": "What discount does {{[Automatic_renewal].ih2yf3ac9}}  give me?",
+                      "slots": [
+                        "ih2yf3ac9"
+                      ]
+                    },
+                    {
+                      "text": "{{[Automatic_renewal].ih2yf3ac9}}",
+                      "slots": [
+                        "ih2yf3ac9"
+                      ]
+                    }
+                  ],
+                  "confirmEnabled": false
+                }
+              }
+            ]
+          }
+        ],
+        "usedIntentsSet": [
+          "capture_Km_dgfiedcm",
+          "capture_Name_npifkaln",
+          "VF.START_OVER",
+          "capture_Automatic_renewal_jhmafekp"
+        ],
+        "platform": "chatbot",
+        "goToIntentsSet": [],
+        "products": {},
+        "interfaces": [],
+        "permissions": [],
+        "usedCustomBlocks": []
+      },
+      "settings": {
+        "brandColor": "#3D81E2"
+      },
+      "platform": "chatbot"
+    }
+  },
+  "diagrams": {
+    "6346f5382970bd74aeb06a2d": {
+      "_id": "6346f5382970bd74aeb06a2d",
+      "offsetX": 302.9908936551516,
+      "offsetY": 137.4448574044576,
+      "zoom": 100,
+      "variables": [],
+      "name": "ROOT",
+      "versionID": "6346f5382970bd74aeb06a2c",
+      "creatorID": 102250,
+      "modified": 1665594680,
+      "intentStepIDs": [],
+      "type": "TOPIC",
+      "nodes": {
+        "start00000000000000000000": {
+          "nodeID": "start00000000000000000000",
+          "type": "start",
+          "coords": [
+            321.26138293106055,
+            78.19392824442801
+          ],
+          "data": {
+            "name": "Start",
+            "color": "#56b365",
+            "steps": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "63068ee2b9d93f34f5d1f11c",
+                  "id": "6032afcf359e8c14c06c0319",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          385.8982361167531,
+                          100.19395848780309
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          450.632368733456,
+                          100.19395848780309
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          450.632368733456,
+                          -16.353421512174513
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          515.366501350159,
+                          -16.353421512174513
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "label": "Start"
+          }
+        },
+        "63068ee2b9d93f34f5d1f11a": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "73r23sar",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Thank you for connecting with CAA. I am here to help you choose the right CAA membership."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "63551e071656bf756b38a6cd",
+                  "id": "63068ee2b9d93f34f5d1f11b",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          514.3664061495359,
+                          58.89645118929241
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": true,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          488.0089842745359,
+                          58.89645118929241
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          488.0089842745359,
+                          221.0551425955424
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          512.0089842745359,
+                          221.0551425955424
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "63068ee2b9d93f34f5d1f11a"
+        },
+        "63068ee2b9d93f34f5d1f11c": {
+          "type": "block",
+          "data": {
+            "name": "Welcome",
+            "steps": [
+              "63068ee2b9d93f34f5d1f11a"
+            ],
+            "color": ""
+          },
+          "nodeID": "63068ee2b9d93f34f5d1f11c",
+          "coords": [
+            680.3665293889204,
+            -43.3535673592616
+          ]
+        },
+        "63551e071656bf756b38a6cd": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "u96l369g",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "I will ask you couple of questions to gather some basic informations."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "63551f9c1656bf756b38a6d6",
+                  "id": "63551e071656bf756b38a6ce",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "63551e071656bf756b38a6cd"
+        },
+        "63551e071656bf756b38a6cf": {
+          "type": "block",
+          "data": {
+            "name": "Introduction",
+            "steps": [
+              "63551e071656bf756b38a6cd"
+            ],
+            "color": ""
+          },
+          "nodeID": "63551e071656bf756b38a6cf",
+          "coords": [
+            678.0091063448485,
+            141.5551425955424
+          ]
+        },
+        "63551f9c1656bf756b38a6d6": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "vyaq36zx",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Who do I have the pleasure of speaking with today?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "63551f9c1656bf756b38a6d7",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          844.0089383691692,
+                          437.5551942459608
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          914.7084931667628,
+                          436.8928012427525
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "63551f9c1656bf756b38a6d6"
+        },
+        "63551f9c1656bf756b38a6d8": {
+          "type": "block",
+          "data": {
+            "name": "Question #1",
+            "steps": [
+              "63551f9c1656bf756b38a6d6",
+              "6359dc42de005673de241288"
+            ],
+            "color": ""
+          },
+          "nodeID": "63551f9c1656bf756b38a6d8",
+          "coords": [
+            678.0091063448484,
+            346.5551425955424
+          ]
+        },
+        "635522161656bf756b38a6ee": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "9yi6362y",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Thank you "
+                      },
+                      {
+                        "id": "ijp636ku",
+                        "name": "Name",
+                        "isSlot": true,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "635522921656bf756b38a714",
+                  "id": "635522161656bf756b38a6ef",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          914.7085234591062,
+                          437.1428577444682
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": true,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          880.2721297213133,
+                          437.1428577444682
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          880.2721297213133,
+                          735.0986301443705
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          845.8357359835203,
+                          735.0986301443705
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "635522161656bf756b38a6ee"
+        },
+        "635522161656bf756b38a6f0": {
+          "type": "block",
+          "data": {
+            "name": "Gratitute",
+            "steps": [
+              "635522161656bf756b38a6ee"
+            ],
+            "color": ""
+          },
+          "nodeID": "635522161656bf756b38a6f0",
+          "coords": [
+            1080.70847103488,
+            357.3929033787715
+          ]
+        },
+        "635522921656bf756b38a712": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "ntml36dz",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "How far do you find yourself driving one-way on a regular basis?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "635522921656bf756b38a713"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "635522921656bf756b38a712"
+        },
+        "635522921656bf756b38a714": {
+          "type": "block",
+          "data": {
+            "name": "Question #2",
+            "steps": [
+              "635522921656bf756b38a712",
+              "635524321656bf756b38a725"
+            ],
+            "color": ""
+          },
+          "nodeID": "635522921656bf756b38a714",
+          "coords": [
+            680.8356589338903,
+            708.0986801352627
+          ]
+        },
+        "635524321656bf756b38a725": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "intent",
+              "intent": {
+                "key": "",
+                "name": "",
+                "inputs": [],
+                "slots": [
+                  {
+                    "id": "1w1il3a5h",
+                    "dialog": {
+                      "prompt": [],
+                      "confirm": [],
+                      "utterances": [
+                        {
+                          "text": "{{[Km].1w1il3a5h}}",
+                          "slots": [
+                            "1w1il3a5h"
+                          ]
+                        },
+                        {
+                          "text": "I drive {{[Km].1w1il3a5h}}",
+                          "slots": [
+                            "1w1il3a5h"
+                          ]
+                        },
+                        {
+                          "text": "I drive {{[Km].1w1il3a5h}} kilometers",
+                          "slots": [
+                            "1w1il3a5h"
+                          ]
+                        },
+                        {
+                          "text": "{{[Km].1w1il3a5h}} kilometers",
+                          "slots": [
+                            "1w1il3a5h"
+                          ]
+                        }
+                      ],
+                      "confirmEnabled": false
+                    },
+                    "required": false
+                  }
+                ]
+              }
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "6359e03ede005673de24129c",
+                  "id": "635524321656bf756b38a726",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          846.8357074157865,
+                          870.848672053425
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          928.6812723744167,
+                          870.848672053425
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          928.6812723744167,
+                          778.6465567329304
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1010.526837333047,
+                          778.6465567329304
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "635524321656bf756b38a727"
+                }
+              },
+              "dynamic": []
+            },
+            "noMatch": {
+              "types": [
+                "reprompt"
+              ],
+              "pathName": "No match",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "id": "cl9qe206601in3b7au3dufk1r",
+                  "content": [
+                    {
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "nodeID": "635524321656bf756b38a725",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "6359dc42de005673de241288": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "intent",
+              "intent": {
+                "key": "",
+                "name": "",
+                "inputs": [],
+                "slots": [
+                  {
+                    "id": "ijp636ku",
+                    "dialog": {
+                      "prompt": [],
+                      "confirm": [],
+                      "utterances": [
+                        {
+                          "text": "{{[Name].ijp636ku}} ",
+                          "slots": [
+                            "ijp636ku"
+                          ]
+                        },
+                        {
+                          "text": "My name is {{[Name].ijp636ku}} ",
+                          "slots": [
+                            "ijp636ku"
+                          ]
+                        },
+                        {
+                          "text": "It's {{[Name].ijp636ku}} ",
+                          "slots": [
+                            "ijp636ku"
+                          ]
+                        }
+                      ],
+                      "confirmEnabled": false
+                    },
+                    "required": true
+                  }
+                ]
+              }
+            },
+            "noMatch": {
+              "types": [],
+              "pathName": "No match",
+              "randomize": false,
+              "reprompts": []
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "635522161656bf756b38a6f0",
+                  "id": "6359dc42de005673de241289",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          844.0091063448484,
+                          509.30526085115764
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          879.8588072725828,
+                          509.30526085115764
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          879.8588072725828,
+                          384.39289589144084
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          915.7085082003172,
+                          384.39289589144084
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "6359dc42de005673de24128a"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6359dc42de005673de241288",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "6359e03ede005673de24129a": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "911sv3ak9",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Thank you for answering that. "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6359e03ede005673de24129b"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6359e03ede005673de24129a"
+        },
+        "6359e03ede005673de24129c": {
+          "type": "block",
+          "data": {
+            "name": "Select Membership",
+            "steps": [
+              "6359e03ede005673de24129a",
+              "6359e1f0de005673de2412a4"
+            ],
+            "color": ""
+          },
+          "nodeID": "6359e03ede005673de24129c",
+          "coords": [
+            1175.5266940310735,
+            751.6465124644268
+          ]
+        },
+        "6359e1f0de005673de2412a4": {
+          "type": "ifV2",
+          "data": {
+            "name": "If",
+            "expressions": [
+              {
+                "type": null,
+                "name": "Basic",
+                "value": [
+                  {
+                    "logicInterface": "variable",
+                    "type": "less",
+                    "value": [
+                      {
+                        "type": "variable",
+                        "value": "Km"
+                      },
+                      {
+                        "type": "value",
+                        "value": "10"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": null,
+                "name": "Plus",
+                "value": [
+                  {
+                    "logicInterface": "variable",
+                    "type": "greater",
+                    "value": [
+                      {
+                        "type": "variable",
+                        "value": "Km"
+                      },
+                      {
+                        "type": "value",
+                        "value": "10"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "noMatch": {
+              "type": "none",
+              "pathName": "No match"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "6359e1f0de005673de2412a6"
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "6359e267de005673de2412ae",
+                  "id": "6359e1f0de005673de2412a5",
+                  "data": {}
+                },
+                {
+                  "id": "6359e224de005673de2412aa",
+                  "type": "",
+                  "target": "6359e28cde005673de2412ba",
+                  "data": {}
+                }
+              ]
+            }
+          },
+          "nodeID": "6359e1f0de005673de2412a4"
+        },
+        "6359e267de005673de2412ac": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "zn2593adb",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Basic membershop is ideal for you. "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6359e267de005673de2412ad"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6359e267de005673de2412ac"
+        },
+        "6359e267de005673de2412ae": {
+          "type": "block",
+          "data": {
+            "name": "Basic membership",
+            "steps": [
+              "6359e267de005673de2412ac"
+            ],
+            "color": ""
+          },
+          "nodeID": "6359e267de005673de2412ae",
+          "coords": [
+            1569.995357289973,
+            769.4813305150014
+          ]
+        },
+        "6359e28cde005673de2412b7": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "zn2593adb",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Plus membershop is ideal for you. "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6359e28cde005673de2412b8"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6359e28cde005673de2412b7"
+        },
+        "6359e28cde005673de2412ba": {
+          "type": "block",
+          "data": {
+            "name": "Plus membership",
+            "color": "",
+            "steps": [
+              "6359e28cde005673de2412b7"
+            ]
+          },
+          "nodeID": "6359e28cde005673de2412ba",
+          "coords": [
+            1583.326697184778,
+            1034.113506016479
+          ]
+        }
+      },
+      "children": [],
+      "menuNodeIDs": [
+        "start00000000000000000000"
+      ]
+    },
+    "6359e526a71c310007671c02": {
+      "_id": "6359e526a71c310007671c02",
+      "name": "Automatic renewal",
+      "type": "TOPIC",
+      "zoom": 100,
+      "nodes": {
+        "6359e526e7ab65000719bea3": {
+          "type": "block",
+          "nodeID": "6359e526e7ab65000719bea3",
+          "coords": [
+            360,
+            120
+          ],
+          "data": {
+            "name": "",
+            "color": "",
+            "steps": [
+              "6359e526e7ab65000719bea2"
+            ]
+          }
+        },
+        "6359e526e7ab65000719bea2": {
+          "type": "intent",
+          "nodeID": "6359e526e7ab65000719bea2",
+          "data": {
+            "intent": "VF.START_OVER",
+            "mappings": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "id": "6359e526e7ab65000719bea4",
+                  "type": "next",
+                  "target": "6359e586de005673de241379",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          443.96089172363276,
+                          141.99994468688965
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          507.24992370605463,
+                          141.99994468688965
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          507.24992370605463,
+                          224.74995040893555
+                        ],
+                        "toTop": true,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "availability": "GLOBAL",
+            "name": ""
+          }
+        },
+        "6359e586de005673de241377": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "lq2qw3aqj",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Thank you for connecting with CAA. My name is Rua. How can I assist you?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "6359e5fade005673de241405",
+                  "id": "6359e586de005673de241378",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6359e586de005673de241377"
+        },
+        "6359e586de005673de241379": {
+          "type": "block",
+          "data": {
+            "name": "Greeting",
+            "steps": [
+              "6359e586de005673de241377"
+            ],
+            "color": ""
+          },
+          "nodeID": "6359e586de005673de241379",
+          "coords": [
+            507.2499999999999,
+            224.74996948242188
+          ]
+        },
+        "6359e5fade005673de241402": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "intent",
+              "intent": {
+                "key": "",
+                "name": "",
+                "inputs": [],
+                "slots": [
+                  {
+                    "id": "ih2yf3ac9",
+                    "dialog": {
+                      "prompt": [],
+                      "confirm": [],
+                      "utterances": [
+                        {
+                          "text": "What is {{[Automatic_renewal].ih2yf3ac9}} ?",
+                          "slots": [
+                            "ih2yf3ac9"
+                          ]
+                        },
+                        {
+                          "text": "{{[Automatic_renewal].ih2yf3ac9}} ",
+                          "slots": [
+                            "ih2yf3ac9"
+                          ]
+                        },
+                        {
+                          "text": "What discount does {{[Automatic_renewal].ih2yf3ac9}}  give me?",
+                          "slots": [
+                            "ih2yf3ac9"
+                          ]
+                        }
+                      ],
+                      "confirmEnabled": false
+                    },
+                    "required": true
+                  }
+                ]
+              }
+            },
+            "noMatch": {
+              "types": [
+                "reprompt"
+              ],
+              "pathName": "No match",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "id": "cl9qf3fyp02vg3b7au3kr3rbt",
+                  "content": [
+                    {
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "6359e6b6de005673de24140f",
+                  "id": "6359e5fade005673de241403",
+                  "data": {}
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "6359e5fade005673de241404"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6359e5fade005673de241402"
+        },
+        "6359e5fade005673de241405": {
+          "type": "block",
+          "data": {
+            "name": "What is automatic renewal?",
+            "steps": [
+              "6359e5fade005673de241402"
+            ],
+            "color": ""
+          },
+          "nodeID": "6359e5fade005673de241405",
+          "coords": [
+            550.9999999999999,
+            457.2500076293945
+          ]
+        },
+        "6359e6b6de005673de24140d": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "tw30l3a5h",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "It's a discount program which automatically diduct membership cost from your provided way of payment. You can Enrol in our Automatic Credit Card Renewal program for easy, annual renewals and we'll take $10 off your bill."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6359e6b6de005673de24140e"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6359e6b6de005673de24140d"
+        },
+        "6359e6b6de005673de24140f": {
+          "type": "block",
+          "data": {
+            "name": "Answer",
+            "steps": [
+              "6359e6b6de005673de24140d"
+            ],
+            "color": ""
+          },
+          "nodeID": "6359e6b6de005673de24140f",
+          "coords": [
+            1008.4999999999999,
+            481.00000762939453
+          ]
+        }
+      },
+      "offsetX": 0,
+      "offsetY": 0,
+      "modified": 1666835750,
+      "children": [],
+      "variables": [],
+      "menuNodeIDs": [
+        "6359e526e7ab65000719bea2"
+      ],
+      "creatorID": 102250,
+      "versionID": "6346f5382970bd74aeb06a2c",
+      "intentStepIDs": [
+        "6359e526e7ab65000719bea2"
+      ]
+    }
+  },
+  "variableStates": []
+}
